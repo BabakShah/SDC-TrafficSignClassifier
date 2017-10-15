@@ -110,7 +110,7 @@ Here are five German traffic signs that I found on the web:
 
 <img src="readme_images/new_signs.png" width="480" alt="New German Traffic Signs" />
 
-The images I chose were very difficult and challenging to classify because they're at different angles, distances with various backgrounds. Also, the German Traffic Sign dataset contain a border of 10 % around the actual traffic sign to allow for edge-based approaches but my images don't have such a border. This could be another source of confusion for the model.
+The images I chose were very difficult and challenging to classify because they're at different angles, distances with various backgrounds. Also, the German Traffic Sign dataset contain a border of 10 % around the actual traffic sign to allow for edge-based approaches but my images don't have such a border. This could be another source of confusion for the model. I applied the preprocessing i.e. grayscaling and normalizing to my new images.
 
 Here are the results of the prediction:
  
@@ -119,6 +119,8 @@ Here are the results of the prediction:
  [4, 38, 16, 17, 25] <-actual labels
 
 Test Set Accuracy = 0.200
+
+As can be seen from the labels results above and also the softmax probabilities below, the newly acquired images did poorly compared to the previously obtained ones. The reason is that I intentionally chose challenging and difficult German traffic signs to really test my model and see the response for noisy, angled, zoomed with various background images.
 <!--| Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Stop Sign      		| Stop sign   									| 
